@@ -32,7 +32,6 @@ export default {
     handleComplete(id){
       let p= this.projects.find(project=>project.id === id)
       p.complete=!p.complete
-      console.log(p)
     }
   },
 };
