@@ -27,8 +27,8 @@ methods: {
       method:"POST",
       headers:{"Content-Type": "application/json"},
       body:JSON.stringify(project),
-    })
-    this.$router.push("/")
+    }).then(()=>this.$router.push("/")).catch((err)=>console.log(err))
+    
   }
 },
 }
